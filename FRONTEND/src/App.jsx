@@ -1,14 +1,26 @@
-import ThemeBtn from "./pages/ThemeBtn";
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
 
+import Header from "./components/header/Header";
+
+// roters
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<Header />} />
+    </>
+  )
+);
 
 const App = () => {
- 
-
   return (
-      <>
-        <h1 className="text-center mt-48">Har Har Mahadev</h1>
-        <ThemeBtn/>
-      </>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 };
 
