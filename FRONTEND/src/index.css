@@ -10,3 +10,16 @@
     --font-family: 'Arial', sans-serif;
     --base-spacing: 16px;
   }
+
+  @layer base {
+  
+    .light {
+      background-color: #ffffff;
+      color: #333;
+    }
+  
+    .dark {
+      background-color: #333;
+      color: #ffffff;
+    }
+  }

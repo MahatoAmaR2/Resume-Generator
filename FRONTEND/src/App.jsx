@@ -1,13 +1,15 @@
-import "./App.css";
+import ThemeBtn from "./pages/ThemeBtn";
 
-function App() {
+
+const App = () => {
+ 
+
   return (
-    <>
-      <div className="bg-black text-white p-base">
-        <h1 className="font-sans">HAr Har Mahadev</h1>
-      </div>
-    </>
+      <>
+        <h1 className="text-center mt-48">Har Har Mahadev</h1>
+        <ThemeBtn/>
+      </>
   );
-}
+};
 
 export default App;
