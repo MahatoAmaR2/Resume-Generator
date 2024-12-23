@@ -11,6 +11,16 @@
     --base-spacing: 16px;
   }
 
+@font-face{
+  font-family: font1;
+  src: url(./assets/ff.woff);
+}
+@font-face{
+  font-family: font2;
+  src: url(./assets/ff.woff2);
+}
+
+
   @layer base {
   
     .light {

@@ -22,10 +22,11 @@ function ThemeBtn() {
     <>
       <div>
         {theme === "light" ? (
+          <div className="hover:bg-gray-400 p-1 rounded-md">
           <CiLight
             onClick={handleThemeToggle}
             className="cursor-pointer text-2xl"
-          />
+          /></div>
         ) : (
           <CiDark
             onClick={handleThemeToggle}
