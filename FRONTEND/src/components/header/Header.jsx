@@ -4,7 +4,7 @@ import ThemeBtn from "../../pages/ThemeBtn";
 function Header() {
   return (
     <>
-      <div className="w-full font-[font2] h-[56px] px-[32px] bg-primary text-white dark:border-b flex justify-between items-center">
+      <div className="w-full font-[font2] h-[56px] px-[32px] bg-primary text-white dark:border-b dark:bg-[#282828] flex justify-between items-center">
         <div className="left flex gap-2 font-medium cursor-pointer text-base items-center">
           <SiReaddotcv className="text-[22px]"/>
           <p>CvResume</p>
