@@ -5,13 +5,13 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 
-import Header from "./components/header/Header";
+import Home from "./pages/Home";
 
 // roters
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Header />} />
+      <Route path="/" element={<Home />} />
     </>
   )
 );

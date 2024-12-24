@@ -5,8 +5,9 @@
 
 :root {
     --primary-color: #1F2937;
-    --secondary-color: #FF8800;
-    --btn-color: #635BA9;
+    --secondary-color: #635ba9;
+    --tertiary-color: #FF8800;
+    --btn-color: #776fbd;
     --font-family: 'Arial', sans-serif;
     --base-spacing: 16px;
   }
