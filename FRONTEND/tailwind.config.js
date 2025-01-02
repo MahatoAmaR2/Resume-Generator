@@ -11,7 +11,7 @@ export default {
         btnColor: "var(--btn-color)"
       },
       fontFamily: {
-        woff: ['font1', 'sans-serif'],
+        woff: ['font2', 'sans-serif'],
       },
       spacing: {
         base: "var(--base-spacing)",
