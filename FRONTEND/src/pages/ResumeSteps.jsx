@@ -1,7 +1,7 @@
 function ResumeSteps() {
   return (
     <>
-      <div className="relative dark:border-y dark:border-y-[#a1a1aa] font-[font2] bg-white dark:bg-[#1A1A1A] px-4 py-20">
+      <div className="relative dark:border-y border-b border-b-[#a1a1aa] dark:border-y-[#a1a1aa] font-[font2] bg-white dark:bg-[#1A1A1A] px-4 py-20">
         <div className="max-w-[940px] mx-auto">
           <div className="heading mb-4 text-center">
             <h1 className="text-4xl font-semibold text-black dark:text-white">

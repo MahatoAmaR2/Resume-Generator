@@ -3,6 +3,7 @@ import Hero from "../components/hero/Hero"
 import Service from "./Service";
 import Tamplate from "./Tamplate";
 import ResumeSteps from "./ResumeSteps";
+import FAQ from "./FAQ";
 
 function Home() {
     return ( 
@@ -12,6 +13,7 @@ function Home() {
             <Service/>
             <Tamplate/>
             <ResumeSteps/>
+            <FAQ/>
         </>
      );
 }
