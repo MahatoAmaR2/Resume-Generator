@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/Home";
+import SwiperSlider from "./components/imageSLider/Slider";
 
 // roters
 const router = createBrowserRouter(

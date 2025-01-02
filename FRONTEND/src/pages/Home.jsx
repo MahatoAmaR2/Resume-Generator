@@ -1,6 +1,7 @@
 import Header from "../components/header/Header"
 import Hero from "../components/hero/Hero"
 import Service from "./Service";
+import Tamplate from "./Tamplate";
 
 function Home() {
     return ( 
@@ -8,6 +9,7 @@ function Home() {
             <Header/>
             <Hero/>
             <Service/>
+            <Tamplate/>
         </>
      );
 }
