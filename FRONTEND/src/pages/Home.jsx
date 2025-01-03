@@ -4,6 +4,7 @@ import Service from "./Service";
 import Tamplate from "./Tamplate";
 import ResumeSteps from "./ResumeSteps";
 import FAQ from "./FAQ";
+import CreateResume from "./CreateResume";
 
 function Home() {
     return ( 
@@ -14,6 +15,7 @@ function Home() {
             <Tamplate/>
             <ResumeSteps/>
             <FAQ/>
+            <CreateResume/>
         </>
      );
 }
