@@ -5,6 +5,7 @@ import Tamplate from "./Tamplate";
 import ResumeSteps from "./ResumeSteps";
 import FAQ from "./FAQ";
 import CreateResume from "./CreateResume";
+import Footer from "../components/footer/Footer";
 
 function Home() {
     return ( 
@@ -16,6 +17,7 @@ function Home() {
             <ResumeSteps/>
             <FAQ/>
             <CreateResume/>
+            <Footer/>
         </>
      );
 }
