@@ -15,7 +15,7 @@ function Header() {
           <p className="border-r border-gray-500 dark:border-gray-300 pr-10">Coach</p>
           <ThemeBtn />
           <p>Login</p>
-          <Link to="" className="bg-tertiary hover:bg-[#635ba9] hover:delay-100 font-semibold px-3 py-2 leading-4 text-[12px] rounded-md inline-block text-white">
+          <Link to="/auth/register" className="bg-tertiary hover:bg-[#635ba9] hover:delay-100 font-semibold px-3 py-2 leading-4 text-[12px] rounded-md inline-block text-white">
             Sign Up
           </Link>
         </div>

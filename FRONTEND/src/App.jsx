@@ -6,13 +6,13 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/Home";
-import SwiperSlider from "./components/imageSLider/Slider";
-
+import Signup from "./pages/Signup";
 // roters
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Home />} />
+      <Route path="/auth/register" element={<Signup />} />
     </>
   )
 );
