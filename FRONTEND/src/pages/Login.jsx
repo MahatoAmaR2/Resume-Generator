@@ -7,7 +7,7 @@ import { FaGoogle } from "react-icons/fa6";
 import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
 import ThemeBtn from "./ThemeBtn";
 
-function Signup() {
+function Login() {
   const [visible, setVisible] = useState(false);
   const handleClick = (e) => {
     e.preventDefault();
@@ -21,7 +21,7 @@ function Signup() {
         </div>
       </nav>
       <div className="font-[font2] bg-white dark:bg-[#1A1A1A] w-full h-full flex justify-center items-center py-12 px-4">
-        <div className="flex flex-col max-w-md w-full">
+        <div className="flex flex-col  max-w-md w-full">
           <div className="flex gap-2  justify-center items-center mb-6">
             <SiReaddotcv className="text-4xl" />
             <p className="font-bold text-3xl text-[#030712] dark:text-white">
@@ -103,6 +103,15 @@ function Signup() {
                     </button>
                   </div>
                 </div>
+                <div className="fp mt-2 gap-4 flex items-center justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center space-x-2">
+                        <input type="checkbox" id="check" className="h-4 w-4 rounded-sm border border-secondary dark:bg-[#282828] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"/>
+                        <label htmlFor="check" className="text-sm font-medium opacity-70 text-[#71717a] dark:text-[#a1a1aa]">Remember me</label>
+                    </div>
+                  </div>
+                  <Link className="text-sm font-medium text-[#030712]  dark:text-white focus-visible:outline-none focus-visible:ring-1 underline-offset-4 hover:underline h-10 py-2">Forgot your password?</Link>
+                </div>
                 <div className="text-right w-full mt-4 ">
                   <button
                     type="submit"
@@ -133,7 +142,14 @@ function Signup() {
             </div>
           </div>
           <p className="text-center dark:text-[#a1a1aa] text-[#71717a] text-xs mt-6 font-normal">
-            By signing up you agree to our <Link className="text-btnColor dark:hover:text-white">Terms of Service</Link> and <Link className="text-btnColor dark:hover:text-white">Privacy Policy</Link>{" "}
+            By signing up you agree to our{" "}
+            <Link className="text-btnColor dark:hover:text-white">
+              Terms of Service
+            </Link>{" "}
+            and{" "}
+            <Link className="text-btnColor dark:hover:text-white">
+              Privacy Policy
+            </Link>{" "}
           </p>
         </div>
       </div>
@@ -141,4 +157,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default Login;

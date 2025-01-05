@@ -7,12 +7,14 @@ import {
 
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 // roters
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Home />} />
       <Route path="/auth/register" element={<Signup />} />
+      <Route path="/auth/login" element={<Login />} />
     </>
   )
 );
