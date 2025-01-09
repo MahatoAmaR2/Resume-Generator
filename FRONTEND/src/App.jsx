@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ContactUs from "./pages/Contactus";
+import Dashboard from "./pages/Dashboard";
 // roters
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route path="/auth/register" element={<Signup />} />
       <Route path="/auth/login" element={<Login />} />
       <Route path="/contact-us" element={<ContactUs />} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </>
   )
 );
