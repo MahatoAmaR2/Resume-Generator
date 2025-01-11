@@ -1,9 +1,22 @@
 import { Link, NavLink } from "react-router-dom";
 import Header from "../components/header/Header";
+import { useState } from "react";
+import { IoIosCloseCircleOutline } from "react-icons/io";
+import TamplateCard from "../components/tamplatesCard/TamplateCard";
 
 function Dashboard() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleOpenPopup = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
-    <>
+    <div>
       <div className="nav">
         <Header />
       </div>
@@ -67,9 +80,7 @@ function Dashboard() {
                       alt=""
                       className="w-44 h-44 mt-6 mb-8"
                     />
-                    <div
-                      className="text-base flex justify-center flex-col items-center text-[#71717a] dark:text-[#a1a1aa] font-normal"
-                    >
+                    <div className="text-base flex justify-center flex-col items-center text-[#71717a] dark:text-[#a1a1aa] font-normal">
                       {" "}
                       <p>
                         Custom-built, amazing resumes. Empower your job search
@@ -77,10 +88,13 @@ function Dashboard() {
                       <p>in just a few clicks!</p>
                     </div>
 
-                    <Link className="flex justify-center items-center gap-3 mt-8  shadow transition-colors bg-secondary text-sm font-medium px-4 py-2 hover:bg-btnColor rounded-md text-white">
+                    <button
+                      onClick={handleOpenPopup}
+                      className="flex justify-center items-center gap-3 mt-8  shadow transition-colors bg-secondary text-sm font-medium px-4 py-2 hover:bg-btnColor rounded-md text-white"
+                    >
                       <p>+</p>
                       <p>Create new</p>
-                    </Link>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -120,7 +134,107 @@ function Dashboard() {
           </main>
         </div>
       </div>
-    </>
+
+      {/* popup */}
+      {showPopup && (
+        <div className="inset-x-0 inset-y-3 fixed overflow-y-auto  bg-gray-600 bg-opacity-60 z-50">
+          <div className="bg-white dark:bg-[#282828] px-4 font-[font2] rounded-lg shadow-lg w-full">
+            <div className="flex justify-end pt-3 ">
+              <button
+                onClick={handleClosePopup}
+                className=" hover:bg-gray-100 dark:text-white rounded-md text-black  text-3xl p-1 "
+              >
+                <IoIosCloseCircleOutline />
+              </button>
+            </div>
+            <div className="flex justify-center items-center flex-col mt-16 pb-20">
+              <div className="text-center dark:text-white text-black text-5xl font-extrabold pt-2">
+                <h2>Job-winning resume</h2>
+                <h2>templates</h2>
+              </div>
+              <div className="text-sm font-normal dark:text-[#a1a1aa] text-[#71717a] text-center my-4">
+                <p>
+                  Each resume template is expertly designed and follows the
+                  exact “resume rules” hiring
+                </p>
+                <p>
+                  managers look for. Stand out and get hired faster with
+                  field-tested resume templates.
+                </p>
+              </div>
+              <div className="flex">
+                <button className="inline-flex justify-center items-center px-4 py-2 text-sm font-medium hover:bg-btnColor bg-secondary text-white rounded-md">
+                  Create my Resume
+                </button>
+              </div>
+            </div>
+            <div className="w-full mx-auto max-w-6xl pb-10">
+              <div className="border-b border-b-[#E2E8F0] h-10 rounded-md w-full flex justify-start">
+                <button className="w-fit inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all border bg-white border-[#E2E8F0] border-b-0 h-[inherit] rounded-br-none  shadow-inner">
+                  All tamplates
+                </button>
+                <button className="w-fit inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all border bg-white border-[#E2E8F0] border-b-0 h-[inherit] rounded-br-none  shadow-inner">
+                  Simple
+                </button>
+                <button className="w-fit inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all border bg-white border-[#E2E8F0] border-b-0 h-[inherit] rounded-br-none  shadow-inner">
+                  Ats
+                </button>
+              </div>
+            </div>
+            <div className="grid grid-cols-3 gap-6 max-w-6xl mx-auto p-8">
+              <TamplateCard
+                image="./cambridge_2.webp"
+                alte="cambridge_2"
+                title="cambridge"
+                para="Ideal for careers in law, medicine and other professions"
+              />
+              <TamplateCard
+                image="./harvard_2.webp"
+                alte="harvard_2"
+                title="harvard"
+                para="Ideal for careers in design, marketing and communications"
+              />
+              <TamplateCard
+                image="./dublin_2.webp"
+                alte="dublin_2"
+                title="dublin"
+                para="Ideal for careers in product and engineering"
+              />
+              <TamplateCard
+                image="./shark_new.webp"
+                alte="shark_new"
+                title="shark"
+                para="Ideal for all job types"
+              />
+              <TamplateCard
+                image="./stockholm_2.webp"
+                alte="stockholm_2"
+                title="stockholm"
+                para="Ideal for careers in business and management"
+              />
+              <TamplateCard
+                image="./eagle_new.webp"
+                alte="eagle_new"
+                title="eagle"
+                para="Ideal for freshers, who are just starting out"
+              />
+              <TamplateCard
+                image="./cambridge_2.webp"
+                alte="cambridge_2"
+                title="cambridge"
+                para="Ideal for careers in law, medicine and other professions"
+              />
+              <TamplateCard
+                image="./rabbit.webp"
+                alte="rabbit"
+                title="rabbit"
+                para="Known to make a memorable first impression"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
 
